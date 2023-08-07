@@ -1,0 +1,213 @@
+R 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+X_ERROR(0.001) 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+H 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+DEPOLARIZE1(0.001) 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+TICK
+C_ZYX 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+DEPOLARIZE1(0.001) 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+R 18 20 23 28 29 32 34 36
+X_ERROR(0.001) 18 20 23 28 29 32 34 36
+CX 0 18 5 20 8 23 4 28 7 29 6 32 10 34 15 36
+DEPOLARIZE2(0.001) 0 18 5 20 8 23 4 28 7 29 6 32 10 34 15 36
+CX 3 18 1 20 2 23 13 28 12 29 14 32 9 34 11 36
+DEPOLARIZE2(0.001) 3 18 1 20 2 23 13 28 12 29 14 32 9 34 11 36
+M(0.001) 18 20 23 28 29 32 34 36
+OBSERVABLE_INCLUDE(0) rec[-4] rec[-2]
+OBSERVABLE_INCLUDE(1) rec[-3] rec[-1]
+OBSERVABLE_INCLUDE(2) rec[-5] rec[-1]
+OBSERVABLE_INCLUDE(3) rec[-6] rec[-5]
+DETECTOR rec[-8]
+DETECTOR rec[-7]
+DETECTOR rec[-6]
+DETECTOR rec[-5]
+DETECTOR rec[-4]
+DETECTOR rec[-3]
+DETECTOR rec[-2]
+DETECTOR rec[-1]
+TICK
+C_ZYX 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+DEPOLARIZE1(0.001) 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+R 17 19 25 27 30 31 33 35
+X_ERROR(0.001) 17 19 25 27 30 31 33 35
+CX 0 17 4 19 10 25 6 27 5 30 8 31 15 33 7 35
+DEPOLARIZE2(0.001) 0 17 4 19 10 25 6 27 5 30 8 31 15 33 7 35
+CX 2 17 1 19 3 25 12 27 14 30 11 31 9 33 13 35
+DEPOLARIZE2(0.001) 2 17 1 19 3 25 12 27 14 30 11 31 9 33 13 35
+M(0.001) 17 19 25 27 30 31 33 35
+OBSERVABLE_INCLUDE(0) rec[-6] rec[-2]
+OBSERVABLE_INCLUDE(1) rec[-5] rec[-4]
+OBSERVABLE_INCLUDE(2) rec[-3] rec[-2]
+OBSERVABLE_INCLUDE(3) rec[-8] rec[-7]
+TICK
+C_ZYX 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+DEPOLARIZE1(0.001) 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+R 16 21 22 24 26 37 38 39
+X_ERROR(0.001) 16 21 22 24 26 37 38 39
+CX 0 16 6 21 7 22 4 24 5 26 8 37 15 38 10 39
+DEPOLARIZE2(0.001) 0 16 6 21 7 22 4 24 5 26 8 37 15 38 10 39
+CX 1 16 2 21 3 22 9 24 11 26 13 37 12 38 14 39
+DEPOLARIZE2(0.001) 1 16 2 21 3 22 9 24 11 26 13 37 12 38 14 39
+M(0.001) 16 21 22 24 26 37 38 39
+OBSERVABLE_INCLUDE(0) rec[-6] rec[-2]
+OBSERVABLE_INCLUDE(1) rec[-4] rec[-2]
+OBSERVABLE_INCLUDE(2) rec[-5] rec[-3]
+OBSERVABLE_INCLUDE(3) rec[-8] rec[-3]
+DETECTOR rec[-16] rec[-15] rec[-13] rec[-10] rec[-8] rec[-7] rec[-5] rec[-2]
+DETECTOR rec[-14] rec[-12] rec[-11] rec[-9] rec[-6] rec[-4] rec[-3] rec[-1]
+TICK
+C_ZYX 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+DEPOLARIZE1(0.001) 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+R 18 20 23 28 29 32 34 36
+X_ERROR(0.001) 18 20 23 28 29 32 34 36
+CX 0 18 5 20 8 23 4 28 7 29 6 32 10 34 15 36
+DEPOLARIZE2(0.001) 0 18 5 20 8 23 4 28 7 29 6 32 10 34 15 36
+CX 3 18 1 20 2 23 13 28 12 29 14 32 9 34 11 36
+DEPOLARIZE2(0.001) 3 18 1 20 2 23 13 28 12 29 14 32 9 34 11 36
+M(0.001) 18 20 23 28 29 32 34 36
+OBSERVABLE_INCLUDE(0) rec[-4] rec[-2]
+OBSERVABLE_INCLUDE(1) rec[-3] rec[-1]
+OBSERVABLE_INCLUDE(2) rec[-5] rec[-1]
+OBSERVABLE_INCLUDE(3) rec[-6] rec[-5]
+TICK
+REPEAT 15 {
+    C_ZYX 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+    DEPOLARIZE1(0.001) 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+    R 17 19 25 27 30 31 33 35
+    X_ERROR(0.001) 17 19 25 27 30 31 33 35
+    CX 0 17 4 19 10 25 6 27 5 30 8 31 15 33 7 35
+    DEPOLARIZE2(0.001) 0 17 4 19 10 25 6 27 5 30 8 31 15 33 7 35
+    CX 2 17 1 19 3 25 12 27 14 30 11 31 9 33 13 35
+    DEPOLARIZE2(0.001) 2 17 1 19 3 25 12 27 14 30 11 31 9 33 13 35
+    M(0.001) 17 19 25 27 30 31 33 35
+    OBSERVABLE_INCLUDE(0) rec[-6] rec[-2]
+    OBSERVABLE_INCLUDE(1) rec[-5] rec[-4]
+    OBSERVABLE_INCLUDE(2) rec[-3] rec[-2]
+    OBSERVABLE_INCLUDE(3) rec[-8] rec[-7]
+    DETECTOR rec[-40] rec[-38] rec[-34] rec[-33] rec[-32] rec[-30] rec[-27] rec[-26] rec[-16] rec[-14] rec[-10] rec[-9] rec[-8] rec[-6] rec[-3] rec[-2]
+    DETECTOR rec[-39] rec[-37] rec[-36] rec[-35] rec[-31] rec[-29] rec[-28] rec[-25] rec[-15] rec[-13] rec[-12] rec[-11] rec[-7] rec[-5] rec[-4] rec[-1]
+    TICK
+    C_ZYX 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+    DEPOLARIZE1(0.001) 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+    R 16 21 22 24 26 37 38 39
+    X_ERROR(0.001) 16 21 22 24 26 37 38 39
+    CX 0 16 6 21 7 22 4 24 5 26 8 37 15 38 10 39
+    DEPOLARIZE2(0.001) 0 16 6 21 7 22 4 24 5 26 8 37 15 38 10 39
+    CX 1 16 2 21 3 22 9 24 11 26 13 37 12 38 14 39
+    DEPOLARIZE2(0.001) 1 16 2 21 3 22 9 24 11 26 13 37 12 38 14 39
+    M(0.001) 16 21 22 24 26 37 38 39
+    OBSERVABLE_INCLUDE(0) rec[-6] rec[-2]
+    OBSERVABLE_INCLUDE(1) rec[-4] rec[-2]
+    OBSERVABLE_INCLUDE(2) rec[-5] rec[-3]
+    OBSERVABLE_INCLUDE(3) rec[-8] rec[-3]
+    DETECTOR rec[-40] rec[-39] rec[-37] rec[-34] rec[-32] rec[-31] rec[-29] rec[-26] rec[-16] rec[-15] rec[-13] rec[-10] rec[-8] rec[-7] rec[-5] rec[-2]
+    DETECTOR rec[-38] rec[-36] rec[-35] rec[-33] rec[-30] rec[-28] rec[-27] rec[-25] rec[-14] rec[-12] rec[-11] rec[-9] rec[-6] rec[-4] rec[-3] rec[-1]
+    TICK
+    C_ZYX 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+    DEPOLARIZE1(0.001) 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+    R 18 20 23 28 29 32 34 36
+    X_ERROR(0.001) 18 20 23 28 29 32 34 36
+    CX 0 18 5 20 8 23 4 28 7 29 6 32 10 34 15 36
+    DEPOLARIZE2(0.001) 0 18 5 20 8 23 4 28 7 29 6 32 10 34 15 36
+    CX 3 18 1 20 2 23 13 28 12 29 14 32 9 34 11 36
+    DEPOLARIZE2(0.001) 3 18 1 20 2 23 13 28 12 29 14 32 9 34 11 36
+    M(0.001) 18 20 23 28 29 32 34 36
+    OBSERVABLE_INCLUDE(0) rec[-4] rec[-2]
+    OBSERVABLE_INCLUDE(1) rec[-3] rec[-1]
+    OBSERVABLE_INCLUDE(2) rec[-5] rec[-1]
+    OBSERVABLE_INCLUDE(3) rec[-6] rec[-5]
+    DETECTOR rec[-40] rec[-38] rec[-36] rec[-34] rec[-32] rec[-31] rec[-28] rec[-25] rec[-16] rec[-14] rec[-12] rec[-10] rec[-8] rec[-7] rec[-4] rec[-1]
+    DETECTOR rec[-39] rec[-37] rec[-35] rec[-33] rec[-30] rec[-29] rec[-27] rec[-26] rec[-15] rec[-13] rec[-11] rec[-9] rec[-6] rec[-5] rec[-3] rec[-2]
+    TICK
+    C_ZYX 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+    DEPOLARIZE1(0.001) 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+    R 17 19 25 27 30 31 33 35
+    X_ERROR(0.001) 17 19 25 27 30 31 33 35
+    CX 0 17 4 19 10 25 6 27 5 30 8 31 15 33 7 35
+    DEPOLARIZE2(0.001) 0 17 4 19 10 25 6 27 5 30 8 31 15 33 7 35
+    CX 2 17 1 19 3 25 12 27 14 30 11 31 9 33 13 35
+    DEPOLARIZE2(0.001) 2 17 1 19 3 25 12 27 14 30 11 31 9 33 13 35
+    M(0.001) 17 19 25 27 30 31 33 35
+    OBSERVABLE_INCLUDE(0) rec[-6] rec[-2]
+    OBSERVABLE_INCLUDE(1) rec[-5] rec[-4]
+    OBSERVABLE_INCLUDE(2) rec[-3] rec[-2]
+    OBSERVABLE_INCLUDE(3) rec[-8] rec[-7]
+    DETECTOR rec[-40] rec[-38] rec[-34] rec[-33] rec[-32] rec[-30] rec[-27] rec[-26] rec[-16] rec[-14] rec[-10] rec[-9] rec[-8] rec[-6] rec[-3] rec[-2]
+    DETECTOR rec[-39] rec[-37] rec[-36] rec[-35] rec[-31] rec[-29] rec[-28] rec[-25] rec[-15] rec[-13] rec[-12] rec[-11] rec[-7] rec[-5] rec[-4] rec[-1]
+    TICK
+    C_ZYX 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+    DEPOLARIZE1(0.001) 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+    R 16 21 22 24 26 37 38 39
+    X_ERROR(0.001) 16 21 22 24 26 37 38 39
+    CX 0 16 6 21 7 22 4 24 5 26 8 37 15 38 10 39
+    DEPOLARIZE2(0.001) 0 16 6 21 7 22 4 24 5 26 8 37 15 38 10 39
+    CX 1 16 2 21 3 22 9 24 11 26 13 37 12 38 14 39
+    DEPOLARIZE2(0.001) 1 16 2 21 3 22 9 24 11 26 13 37 12 38 14 39
+    M(0.001) 16 21 22 24 26 37 38 39
+    OBSERVABLE_INCLUDE(0) rec[-6] rec[-2]
+    OBSERVABLE_INCLUDE(1) rec[-4] rec[-2]
+    OBSERVABLE_INCLUDE(2) rec[-5] rec[-3]
+    OBSERVABLE_INCLUDE(3) rec[-8] rec[-3]
+    DETECTOR rec[-40] rec[-39] rec[-37] rec[-34] rec[-32] rec[-31] rec[-29] rec[-26] rec[-16] rec[-15] rec[-13] rec[-10] rec[-8] rec[-7] rec[-5] rec[-2]
+    DETECTOR rec[-38] rec[-36] rec[-35] rec[-33] rec[-30] rec[-28] rec[-27] rec[-25] rec[-14] rec[-12] rec[-11] rec[-9] rec[-6] rec[-4] rec[-3] rec[-1]
+    TICK
+    C_ZYX 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+    DEPOLARIZE1(0.001) 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+    R 18 20 23 28 29 32 34 36
+    X_ERROR(0.001) 18 20 23 28 29 32 34 36
+    CX 0 18 5 20 8 23 4 28 7 29 6 32 10 34 15 36
+    DEPOLARIZE2(0.001) 0 18 5 20 8 23 4 28 7 29 6 32 10 34 15 36
+    CX 3 18 1 20 2 23 13 28 12 29 14 32 9 34 11 36
+    DEPOLARIZE2(0.001) 3 18 1 20 2 23 13 28 12 29 14 32 9 34 11 36
+    M(0.001) 18 20 23 28 29 32 34 36
+    OBSERVABLE_INCLUDE(0) rec[-4] rec[-2]
+    OBSERVABLE_INCLUDE(1) rec[-3] rec[-1]
+    OBSERVABLE_INCLUDE(2) rec[-5] rec[-1]
+    OBSERVABLE_INCLUDE(3) rec[-6] rec[-5]
+    DETECTOR rec[-40] rec[-38] rec[-36] rec[-34] rec[-32] rec[-31] rec[-28] rec[-25] rec[-16] rec[-14] rec[-12] rec[-10] rec[-8] rec[-7] rec[-4] rec[-1]
+    DETECTOR rec[-39] rec[-37] rec[-35] rec[-33] rec[-30] rec[-29] rec[-27] rec[-26] rec[-15] rec[-13] rec[-11] rec[-9] rec[-6] rec[-5] rec[-3] rec[-2]
+    TICK
+}
+C_ZYX 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+DEPOLARIZE1(0.001) 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+R 17 19 25 27 30 31 33 35
+X_ERROR(0.001) 17 19 25 27 30 31 33 35
+CX 0 17 4 19 10 25 6 27 5 30 8 31 15 33 7 35
+DEPOLARIZE2(0.001) 0 17 4 19 10 25 6 27 5 30 8 31 15 33 7 35
+CX 2 17 1 19 3 25 12 27 14 30 11 31 9 33 13 35
+DEPOLARIZE2(0.001) 2 17 1 19 3 25 12 27 14 30 11 31 9 33 13 35
+M(0.001) 17 19 25 27 30 31 33 35
+OBSERVABLE_INCLUDE(0) rec[-6] rec[-2]
+OBSERVABLE_INCLUDE(1) rec[-5] rec[-4]
+OBSERVABLE_INCLUDE(2) rec[-3] rec[-2]
+OBSERVABLE_INCLUDE(3) rec[-8] rec[-7]
+DETECTOR rec[-40] rec[-38] rec[-34] rec[-33] rec[-32] rec[-30] rec[-27] rec[-26] rec[-16] rec[-14] rec[-10] rec[-9] rec[-8] rec[-6] rec[-3] rec[-2]
+DETECTOR rec[-39] rec[-37] rec[-36] rec[-35] rec[-31] rec[-29] rec[-28] rec[-25] rec[-15] rec[-13] rec[-12] rec[-11] rec[-7] rec[-5] rec[-4] rec[-1]
+TICK
+C_ZYX 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+DEPOLARIZE1(0.001) 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+R 16 21 22 24 26 37 38 39
+X_ERROR(0.001) 16 21 22 24 26 37 38 39
+CX 0 16 6 21 7 22 4 24 5 26 8 37 15 38 10 39
+DEPOLARIZE2(0.001) 0 16 6 21 7 22 4 24 5 26 8 37 15 38 10 39
+CX 1 16 2 21 3 22 9 24 11 26 13 37 12 38 14 39
+DEPOLARIZE2(0.001) 1 16 2 21 3 22 9 24 11 26 13 37 12 38 14 39
+M(0.001) 16 21 22 24 26 37 38 39
+OBSERVABLE_INCLUDE(0) rec[-6] rec[-2]
+OBSERVABLE_INCLUDE(1) rec[-4] rec[-2]
+OBSERVABLE_INCLUDE(2) rec[-5] rec[-3]
+OBSERVABLE_INCLUDE(3) rec[-8] rec[-3]
+DETECTOR rec[-40] rec[-39] rec[-37] rec[-34] rec[-32] rec[-31] rec[-29] rec[-26] rec[-16] rec[-15] rec[-13] rec[-10] rec[-8] rec[-7] rec[-5] rec[-2]
+DETECTOR rec[-38] rec[-36] rec[-35] rec[-33] rec[-30] rec[-28] rec[-27] rec[-25] rec[-14] rec[-12] rec[-11] rec[-9] rec[-6] rec[-4] rec[-3] rec[-1]
+TICK
+H 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+DEPOLARIZE1(0.001) 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+X_ERROR(0.001) 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+M 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+OBSERVABLE_INCLUDE(0) rec[-4] rec[-9] rec[-13] rec[-1]
+OBSERVABLE_INCLUDE(1) rec[-1] rec[-5] rec[-11] rec[-4]
+OBSERVABLE_INCLUDE(2) rec[-7] rec[-8] rec[-3] rec[-12]
+OBSERVABLE_INCLUDE(3) rec[-15] rec[-3] rec[-8] rec[-16]
+DETECTOR rec[-48] rec[-46] rec[-44] rec[-42] rec[-40] rec[-39] rec[-36] rec[-33] rec[-24] rec[-22] rec[-20] rec[-18] rec[-16] rec[-15] rec[-13] rec[-11] rec[-9] rec[-5] rec[-4] rec[-1]
+DETECTOR rec[-47] rec[-45] rec[-43] rec[-41] rec[-38] rec[-37] rec[-35] rec[-34] rec[-23] rec[-21] rec[-19] rec[-17] rec[-14] rec[-12] rec[-10] rec[-8] rec[-7] rec[-6] rec[-3] rec[-2]
+DETECTOR rec[-32] rec[-31] rec[-29] rec[-26] rec[-24] rec[-23] rec[-21] rec[-18] rec[-16] rec[-15] rec[-14] rec[-12] rec[-10] rec[-7] rec[-4] rec[-1]
+DETECTOR rec[-30] rec[-28] rec[-27] rec[-25] rec[-22] rec[-20] rec[-19] rec[-17] rec[-13] rec[-11] rec[-9] rec[-8] rec[-6] rec[-5] rec[-3] rec[-2]
