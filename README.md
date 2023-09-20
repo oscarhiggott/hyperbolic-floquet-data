@@ -1,7 +1,6 @@
 # hyperbolic-floquet-data
 
-This repository contains Stim circuits and parameters for the hyperbolic and semi-hyperbolic Floquet codes constructed
-for the paper "Constructions and performance of hyperbolic and semi-hyperbolic Floquet codes".
+This repository contains Stim circuits and parameters for the hyperbolic and semi-hyperbolic Floquet codes constructed for the paper "[Constructions and performance of hyperbolic and semi-hyperbolic Floquet codes](https://arxiv.org/abs/2308.03750)".
 
 ### Stim circuits
 
@@ -29,7 +28,6 @@ Note that the representatives of the logical operators used for the
 Bolza code in this repository is not the same as shown in the figures in the paper (in the paper we give a symplectic
 basis, whereas the logicals here are not symplectic).
 
-
 ### Parameters CSV
 
 We also provide two CSV files in the `parameters` directory: `hyperbolic_parameters.csv` and 
@@ -41,3 +39,17 @@ hyperbolic (rather than semi-hyperbolic) tilings.
 Here the column headers `em3_distance`, `sd6_distance` and `dp1_distance` give the circuit distance 
 for the EM3, SD6 and DP1 noise models, respectively.
 
+### Attribution
+
+When using these circuits for research, please cite the [paper](https://arxiv.org/abs/2308.03750):
+
+```
+@article{higgott2023constructions,
+      title={Constructions and performance of hyperbolic and semi-hyperbolic Floquet codes}, 
+      author={Oscar Higgott and Nikolas P. Breuckmann},
+      year={2023},
+      eprint={2308.03750},
+      archivePrefix={arXiv},
+      primaryClass={quant-ph}
+}
+```
