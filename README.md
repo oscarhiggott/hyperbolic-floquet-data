@@ -36,12 +36,12 @@ The `semi_hyperbolic_parameters.csv` file gives all the parameters we computed f
 Floquet codes we constructed.
 The `hyperbolic_parameters.csv` file gives the parameters for the subset constructed from purely 
 hyperbolic (rather than semi-hyperbolic) tilings.
-Here the column headers `em3_distance`, `sd6_distance` and `dp1_distance` give the circuit distance 
+The column headers `em3_distance`, `sd6_distance` and `dp1_distance` give the circuit distance 
 for the EM3, SD6 and DP1 noise models, respectively.
 
 ### Attribution
 
-When using these circuits for research, please cite the [paper](https://arxiv.org/abs/2308.03750):
+When using this repository for research, please cite the [paper](https://arxiv.org/abs/2308.03750):
 
 ```
 @article{higgott2023constructions,
